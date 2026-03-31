@@ -1,0 +1,15 @@
+torch>=2.0.0
+torchaudio>=2.0.0
+numpy>=1.24.0
+librosa>=0.10.0
+scipy>=1.10.0
+soundfile>=0.12.0
+matplotlib>=3.7.0
+Pillow>=9.0.0
+PyYAML>=6.0
+tqdm>=4.60.0
+tensorboard>=2.14.0
+transformers>=4.24.0
+speechbrain>=1.0.0
+x-transformers>=1.30.0
+TextGrid>=1.6.0

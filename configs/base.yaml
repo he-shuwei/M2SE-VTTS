@@ -1,0 +1,80 @@
+
+binary_data_dir: ''
+work_dir: ''
+infer: false
+amp: false
+seed: 1234
+debug: false
+save_codes: []
+
+ds_workers: 2
+test_num: 100
+sort_by_len: true
+
+print_nan_grads: false
+save_best: true
+num_ckpt_keep: 3
+clip_grad_norm: 0
+accumulate_grad_batches: 1
+tb_log_interval: 100
+num_sanity_val_steps: 5
+val_check_interval: 2000
+valid_monitor_key: 'val_loss'
+valid_monitor_mode: 'min'
+max_epochs: 1000
+max_updates: 1000000
+max_tokens: 32000
+max_sentences: 100000
+max_valid_tokens: -1
+max_valid_sentences: 1
+test_input_dir: ''
+resume_from_checkpoint: 0
+max_frames: 8000
+
+hidden_size: 256
+dropout: 0.1
+ffn_hidden_size: 1024
+enc_ffn_kernel_size: 9
+dec_ffn_kernel_size: 9
+enc_layers: 4
+dec_layers: 4
+num_heads: 2
+ffn_padding: SAME
+ffn_act: gelu
+use_pos_embed: true
+
+predictor_hidden: -1
+predictor_kernel: 5
+predictor_layers: 2
+dur_predictor_kernel: 3
+dur_predictor_layers: 2
+predictor_dropout: 0.5
+dur_loss: mse
+
+pitch_norm: standard
+use_pitch_embed: true
+pitch_type: frame
+use_uv: true
+use_energy_embed: false
+pitch_loss: l1
+
+lambda_f0: 1.0
+lambda_uv: 1.0
+lambda_energy: 0.1
+predictor_grad: 0.1
+
+audio_num_mel_bins: 80
+audio_sample_rate: 16000
+hop_size: 200
+win_size: 800
+fft_size: 1024
+keep_bins: 80
+
+use_spk_id: false
+use_spk_embed: false
+
+lr: 1.0
+warmup_updates: 2000
+
+vocoder: bigvgan
+vocoder_ckpt: ''
