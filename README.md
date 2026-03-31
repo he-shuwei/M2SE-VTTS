@@ -3,7 +3,7 @@
 <h1>M<sup>2</sup>SE-VTTS</h1>
 <h3>Multi-Modal and Multi-Scale Spatial Environment Understanding <br> for Immersive Visual Text-to-Speech</h3>
 
-[Rui Liu](https://ttslr.github.io/people.html)<sup>1*</sup>, [Shuwei He](https://github.com/he-shuwei)<sup>1</sup>, Yifan Hu<sup>1</sup>, [Haizhou Li](https://colips.org/~eleliha/)<sup>2,3</sup>
+[Rui Liu](https://ttslr.github.io/people.html)<sup>1*</sup>, [Shuwei He](https://he-shuwei.github.io/)<sup>1</sup>, Yifan Hu<sup>1</sup>, [Haizhou Li](https://colips.org/~eleliha/)<sup>2,3</sup>
 
 <sup>1</sup> Inner Mongolia University &nbsp;&nbsp; <sup>2</sup> The Chinese University of Hong Kong, Shenzhen &nbsp;&nbsp; <sup>3</sup> National University of Singapore
 
@@ -57,8 +57,8 @@ pip install -r requirements.txt
 | Resource | Path | Description |
 |---|---|---|
 | M2SE-VTTS (finetuned) | `checkpoints/m2se_vtts/` | Finetuned model for inference |
-| Pretrain Encoder | `checkpoints/pretrain_encoder/` | Pretrained encoder (Emilia, MLM) |
-| Pretrain Decoder | `checkpoints/pretrain_decoder/` | Pretrained decoder (Emilia, Diffusion) |
+| Pretrain Encoder | `checkpoints/pretrain_encoder/` | Pretrained encoder (MLM) |
+| Pretrain Decoder | `checkpoints/pretrain_decoder/` | Pretrained decoder (Diffusion) |
 | BigVGAN v2 | `checkpoints/bigvgan/` | Retrained vocoder (16 kHz) |
 | Spatial environment captions | `data/raw_data/captions/` | Gemini-generated captions for all splits |
 | MFA alignment results | `data/processed_data/mfa/outputs/` | Pre-computed forced alignment (TextGrid) |
