@@ -1,6 +1,6 @@
-data/
-checkpoints/
-env/
+/data/
+/checkpoints/
+/env/
 
 __pycache__/
 *.pyc
